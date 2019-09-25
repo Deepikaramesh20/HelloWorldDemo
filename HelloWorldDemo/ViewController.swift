@@ -8,15 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+enum GreetingMessages:String {
+    case HelloWorld = "Hello World"
+    case GoodMorning = "Good Morning"
+    case GoodAfternoon = "Good Afternoon"
+    case GoodEvening = "Good Evening"
+ }
 
-    @IBOutlet weak var textdobedisplayed: UILabel!
+class ViewController: UIViewController {
+    
+    @IBOutlet weak var textobedisplayed: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     @IBAction func displayText(_ sender: UIButton) {
-        self.textdobedisplayed.text = "Hello World"
+        
+        self.textobedisplayed.text = GreetingMessages.GoodMorning.rawValue
+        
     }
 
 }
