@@ -24,7 +24,7 @@ class ViewController: UIViewController {
     }
     @IBAction func displayText(_ sender: UIButton) {
         
-        self.textobedisplayed.text = GreetingMessages.GoodMorning.rawValue
+        self.textobedisplayed.text = GreetingMessages.GoodAfternoon.rawValue
         
     }
 
